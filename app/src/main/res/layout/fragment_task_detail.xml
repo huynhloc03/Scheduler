@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_turquoise"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Task Detail Container -->
+    <LinearLayout
+        android:id="@+id/taskDetailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_item_background">
+
+        <!-- Task Title -->
+        <TextView
+            android:id="@+id/taskDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Task Due Date -->
+        <TextView
+            android:id="@+id/taskDetailDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Due Date"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Task Location -->
+        <TextView
+            android:id="@+id/taskDetailLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Location"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Task Tag -->
+        <TextView
+            android:id="@+id/taskDetailTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Tag"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Task Notes or Additional Info -->
+        <TextView
+            android:id="@+id/taskDetailNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Info"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+</LinearLayout>

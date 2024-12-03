@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="SchedulerTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Set the background color only -->
+        <item name="android:colorBackground">@color/bgcolor</item>
+
+    </style>
+
+
+</resources>

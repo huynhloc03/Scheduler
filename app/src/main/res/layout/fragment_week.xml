@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Week Date Range -->
+    <TextView
+        android:id="@+id/weekDateRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10 Nov - 16 Nov"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:background="#CCCCCC"
+        android:textColor="@android:color/black" />
+
+    <!-- Days Header -->
+    <LinearLayout
+        android:id="@+id/daysHeaderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#FFDDDD"
+        android:gravity="center_vertical">
+
+        <!-- Placeholder for Time Column Alignment -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+        <!-- Days Header Content -->
+        <LinearLayout
+            android:id="@+id/daysHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Main Content with ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Time Column -->
+            <LinearLayout
+                android:id="@+id/timeColumn"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:background="#FFDDDD">
+            </LinearLayout>
+
+            <!-- Placeholder for Events -->
+            <LinearLayout
+                android:id="@+id/daysEventsContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
